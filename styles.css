@@ -1,0 +1,58 @@
+/* Have header take up all of the space */
+header {
+    display: block;
+}
+
+aside {
+    float:left;
+    background-color: rgba(0,0,0,.03);
+    height: 100vh;
+    width: 18rem;
+
+}
+
+/* Positioning for header centered */
+#weather-header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Change of color when hovering over li */
+li:hover {
+    background-color:#0d6efd;
+    color:white;
+    cursor: pointer;
+}
+
+/* Add class for when click event on li */
+.selected {
+    background-color: #295daa;
+}
+
+/* Div stylings holding the two divs on the right for city info and five day forecast */
+.info-containers {
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Stylings for containers holding city information and five day forecast */
+#city-info {
+    display:flex;
+    width:100%;
+    height:50%;
+    border: solid 1px black;
+
+}
+
+#five-day {
+    display:flex;
+    width:100%;
+    height:50%;
+    border: solid 1px black;
+}
