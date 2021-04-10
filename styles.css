@@ -47,12 +47,41 @@ li:hover {
     width:100%;
     height:50%;
     border: solid 1px black;
+    padding-left:20px;
+    padding-top: 40px;
+}
 
+#city-info, p, h1 {
+    display:block;
 }
 
 #five-day {
     display:flex;
+    flex-direction: column;
     width:100%;
     height:50%;
     border: solid 1px black;
+}
+
+#five-day h1 {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#day-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height:100%;
+}
+
+.days {
+    height: 80%;
+    width: 150px;
+    display: block;
+    background-color: #0d6efd;
+    border-radius:5px;
+    margin: 20px;
+    color:white;
+    padding: 10px;
 }

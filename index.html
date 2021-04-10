@@ -27,7 +27,7 @@
                     <div class="card-header">
                       <h3>Search for a City:</h3>
                       <div class="input-group mb-3">
-                        <input type="text" class="form-control">
+                        <input  id="cityName" type="text" class="form-control">
                         <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
                       </div>
                     </div>
@@ -48,17 +48,55 @@
             <div class="info-containers">
                 <!-- City information -->
                 <div id="city-info">
-                   <h1>test</h1>
+                   <h1>Atlanta <span id="currentDate"></span><span class="weatherIcon"></span></h1>
+                   <p>Temperature:<span class="temp"></span></p>
+                   <p>Humidity:<span class="humidity"></span>%</p>
+                   <p>Wind Speed:<span id="windSpeed"></span>MPH</p>
+                   <p>UV Index:<span id="uv"></span></p>
                 </div>
                 <!-- Five day forecast -->
                 <div id="five-day">
-                <h1>test</h1>
+                <h1>5-Day Forecast</h1>
+                    <div id="day-container">
+                        <div class="days">
+                            <h3 id="firstDate"></h3>
+                            <span class="weatherIcon"></span>
+                            <p>Temp:<span class="temp"></span></p>
+                            <p><span class="humidity"></span></p>
+                        </div>
+                        <div class="days">
+                            <h3 id="secondDate"></h3>
+                            <span class="weatherIcon"></span>
+                            <p>Temp:<span class="temp"></span></p>
+                            <p><span class="humidity"></span></p>
+                        </div>
+                        <div class="days">
+                            <h3 id="thirdDate"></h3>
+                            <span class="weatherIcon"></span>
+                            <p>Temp:<span class="temp"></span></p>
+                            <p><span class="humidity"></span></p>
+                        </div>
+                        <div class="days">
+                            <h3 id="fourthDate"></h3>
+                            <span class="weatherIcon"></span>
+                            <p>Temp:<span class="temp"></span></p>
+                            <p><span class="humidity"></span></p>
+                        </div>
+                        <div class="days">
+                            <h3 id="fifthDate"></h3>
+                            <span class="weatherIcon"></span>
+                            <p>Temp:<span class="temp"></span></p>
+                            <p><span class="humidity"></span></p>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </main>
 
         <!-- jQuery UI js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Moment js  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <!-- Javascript script -->
         <script src="script.js"></script>
     </body>
