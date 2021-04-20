@@ -31,17 +31,12 @@
                         <button id="searchBtn" class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
                       </div>
                     </div>
+                    <!-- List for searched cities -->
                     <ul id="cityList" class="list-group list-group-flush">
-                      <li class="list-group-item" value="Austin">Austin</li>
-                      <li class="list-group-item" value="Chicago">Chicago</li>
-                      <li class="list-group-item" value="New York">New York</li>
-                      <li class="list-group-item" value="Orlando">Orlando</li>
-                      <li class="list-group-item" value="San Francisco">San Francisco</li>
-                      <li class="list-group-item" value="Seattle">Seattle</li>
-                      <li class="list-group-item" value="Denver">Denver</li>
-                      <li class="list-group-item" value="Atlanta">Atlanta</li>
+                      
                       
                     </ul>
+                    <button id="clear" class="btn btn-primary" type="button">Clear</button>
                   </div>
             </aside>
             <!-- Container holding city information and five day forecast -->
@@ -49,7 +44,7 @@
                 <!-- City information -->
                 <div id="city-info">
                    <h1><span id="current-city"></span></h1>
-                   <p>Temperature:<span id="tempt"></span></p>
+                   <p>Temperature:<span id="temp"></span></p>
                    <p>Humidity:<span id="humidity"></span></p>
                    <p>Wind Speed:<span id="windSpeed"></span></p>
                    <p>UV Index:<span id="uv"></span></p>
@@ -59,34 +54,34 @@
                 <h1>5-Day Forecast</h1>
                     <div id="day-container">
                         <div class="days">
-                            <h3 id="firstDate"></h3>
-                            <span class="weatherIcon"></span>
-                            <p>Temp:<span class="temp"></span></p>
-                            <p>Humidity:<span class="humidity"></span></p>
+                            <h3 id="day0"></h3>
+                            <span class="icon0"></span>
+                            <p>Temp:<span class="temp0"></span></p>
+                            <p>Humidity:<span class="humidity0"></span></p>
                         </div>
                         <div class="days">
-                            <h3 id="secondDate"></h3>
-                            <span class="weatherIcon"></span>
-                            <p>Temp:<span class="temp"></span></p>
-                            <p>Humidity:<span class="humidity"></span></p>
+                            <h3 id="day1"></h3>
+                            <span class="icon1"></span>
+                            <p>Temp:<span class="temp1"></span></p>
+                            <p>Humidity:<span class="humidity1"></span></p>
                         </div>
                         <div class="days">
-                            <h3 id="thirdDate"></h3>
-                            <span class="weatherIcon"></span>
-                            <p>Temp:<span class="temp"></span></p>
-                            <p>Humidity:<span class="humidity"></span></p>
+                            <h3 id="day2"></h3>
+                            <span class="icon2"></span>
+                            <p>Temp:<span class="temp2"></span></p>
+                            <p>Humidity:<span class="humidity2"></span></p>
                         </div>
                         <div class="days">
-                            <h3 id="fourthDate"></h3>
-                            <span class="weatherIcon"></span>
-                            <p>Temp:<span class="temp"></span></p>
-                            <p>Humidity:<span class="humidity"></span></p>
+                            <h3 id="day3"></h3>
+                            <span class="icon3"></span>
+                            <p>Temp:<span class="temp3"></span></p>
+                            <p>Humidity:<span class="humidity3"></span></p>
                         </div>
                         <div class="days">
-                            <h3 id="fifthDate"></h3>
-                            <span class="weatherIcon"></span>
-                            <p>Temp:<span class="temp"></span></p>
-                            <p>Humidity:<span class="humidity"></span></p>
+                            <h3 id="day4"></h3>
+                            <span class="icon4"></span>
+                            <p>Temp:<span class="temp4"></span></p>
+                            <p>Humidity:<span class="humidity4"></span></p>
                         </div>
                     </div>    
                 </div>
